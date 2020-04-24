@@ -15,5 +15,5 @@ jobs:
           java-version: 1.8
       - name: Unit tests
         run: bash ./gradlew test --stacktrace
-      - name: Unit tests
+      - name: Lint
         run: bash ./gradlew lint --stacktrace
