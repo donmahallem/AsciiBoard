@@ -19,6 +19,8 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
           restore-keys: |
             ${{ runner.os }}-gradle-
+      - name: Build
+        run: bash ./gradlew build
       - name: Unit tests
         run: bash ./gradlew test --stacktrace
       - name: Lint
